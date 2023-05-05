@@ -1,53 +1,53 @@
+
 {
-    "name": "Auto Request Accept Bot",
-    "description": "I am Simple Auto Request Accept Bot. Please Support",
-    "logo": "https://telegra.ph/file/8c0d6e69dab2b76786aa5.jpg",
+    "name": "Auto Approove Bot",
+    "description": "Auto approove telegram group/channel join requests bot.",
+    "repository": "https://github.com/ImDenuwan/Auto-Approve-Bot",
+    "logo":"https://telegra.ph/file/a782e3bbbe40df8a4bb67.jpg",
     "keywords": [
-        "Auto",
-        "Approved",
-        "Group",
-        "Invite",
-        "Link",
-        "Bot"
+        "Bot",
+        "Telegram ",
+        "Pyrogram "
     ],
-    "website": "https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA",
-    "repository": "https://github.com/Aadhi000/Auto-Request-Accept-Bot",
-    "success_url": "https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA",
+    
     "env": {
-        "API_ID": {
-            "description": "Your APP ID",
-            "value": ""
-        },
-        "API_HASH": {
-            "description": "Your API Hash",
-            "value": ""
-        },
-        "BOT_TOKEN": {
-            "description": "Your Bot Token From @BotFather",
-            "value": ""
-        },
-        "CHAT_ID": {
-            "description": "Group/Channel ID Which you are going to use this bot",
-            "value": ""
-        },
-        "APPROVED_WELCOME": {
-            "description": "APPROVED_WELCOME On Or Off",
-            "value": "on"
-        },
-        "APPROVED_WELCOME_TEXT": {
-            "description": "APPROVED_WELCOME_TEXT : Welcome Text",
-            "value": "**Hello {mention}\nWelcome To {title}\n\nYour Request Is Approved.**"
-        }
+    "API_ID": {
+      "description": "Enter your API_ID, get it from my.telegram.org/apps",
+      "required": true
     },
+    "API_HASH": {
+      "description": "Enter your API_HASH, get it from my.telegram.org/apps",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Enter your Bot token, get it from @BotFather",
+      "required": true
+    },
+    "CHID": {
+      "description": "Enter your Force Subscribe channel ID",
+      "required": true
+    },,
+    "FSUB": {
+      "description": "Enter your Force Subscribe channel Username without @",
+      "required": true
+    },,
+    "SUDO": {
+      "description": "Enter Bot Owners IDS",
+      "required": true
+    }
+        
+  },
+  
+    "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
     "buildpacks": [
         {
             "url": "heroku/python"
         }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
+    ]
 }
+
